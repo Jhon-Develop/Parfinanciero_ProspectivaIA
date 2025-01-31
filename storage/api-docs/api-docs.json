@@ -1,0 +1,109 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Parfinanciero API",
+        "description": "This API generates a financial forecast based on a user's expenses and financial goals. It accepts the user's ID, along with optional start and end dates for the forecast. The response includes detailed analyses of the user's expenses and goals over the specified period. If no dates are provided, default values are used.",
+        "termsOfService": "http://example.com/terms/",
+        "contact": {
+            "email": "contact@parfinanciero.com"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/financial-forecast/{userId}": {
+            "get": {
+                "tags": [
+                    "Financial Forecast"
+                ],
+                "summary": "Get financial forecast",
+                "description": "Generates a financial forecast based on the user's expenses and goals.",
+                "operationId": "908903d108486f6020a65c9b707fd59c",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "User ID to generate the financial forecast",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "Start date for the financial forecast",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "date"
+                        }
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "query",
+                        "description": "End date for the financial forecast",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "date"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Financial forecast generated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "userId": {
+                                            "type": "integer"
+                                        },
+                                        "startDate": {
+                                            "type": "string"
+                                        },
+                                        "endDate": {
+                                            "type": "string"
+                                        },
+                                        "expenseAnalysis": {
+                                            "type": "string"
+                                        },
+                                        "goalsAnalysis": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error generating the financial forecast",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Financial Forecast",
+            "description": "Financial Forecast"
+        }
+    ]
+}
