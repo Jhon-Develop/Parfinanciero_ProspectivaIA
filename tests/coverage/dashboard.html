@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\USUARIO\Desktop\Parfinanciero_ProspectivaIA(jhon-develop)\app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=11.0.8" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=11.0.8" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=11.0.8" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">C:\Users\USUARIO\Desktop\Parfinanciero_ProspectivaIA(jhon-develop)\app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#13">App\Http\Controllers\AIAnalysisController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialDataController.php.html#11">App\Http\Controllers\FinancialDataController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialForecastController.php.html#29">App\Http\Controllers\FinancialForecastController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#10">App\Models\User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Api/ApiExpenseRepository.php.html#8">App\Repositories\Api\ApiExpenseRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Api/ApiGoalRepository.php.html#8">App\Repositories\Api\ApiGoalRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Fake/FakeExpenseRepository.php.html#9">App\Repositories\Fake\FakeExpenseRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Fake/FakeGoalRepository.php.html#8">App\Repositories\Fake\FakeGoalRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ExpenseService.php.html#9">App\Services\ExpenseService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/FinancialForecastService.php.html#9">App\Services\FinancialForecastService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#8">App\Services\GoalService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#10">App\Services\OpenAIService</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Services/OpenAIService.php.html#10">App\Services\OpenAIService</a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#13">App\Http\Controllers\AIAnalysisController</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#8">App\Services\GoalService</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialForecastController.php.html#29">App\Http\Controllers\FinancialForecastController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/ExpenseService.php.html#9">App\Services\ExpenseService</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repositories/Api/ApiGoalRepository.php.html#8">App\Repositories\Api\ApiGoalRepository</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/Api/ApiExpenseRepository.php.html#8">App\Repositories\Api\ApiExpenseRepository</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#18"><abbr title="App\Http\Controllers\AIAnalysisController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#80"><abbr title="App\Http\Controllers\AIAnalysisController::generateAnalysis">generateAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#145"><abbr title="App\Http\Controllers\AIAnalysisController::generateGoalsAnalysis">generateGoalsAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#216"><abbr title="App\Http\Controllers\AIAnalysisController::generateGoalsAchievementAnalysis">generateGoalsAchievementAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialDataController.php.html#22"><abbr title="App\Http\Controllers\FinancialDataController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialDataController.php.html#82"><abbr title="App\Http\Controllers\FinancialDataController::getData">getData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialForecastController.php.html#37"><abbr title="App\Http\Controllers\FinancialForecastController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialForecastController.php.html#95"><abbr title="App\Http\Controllers\FinancialForecastController::getFinancialForecast">getFinancialForecast</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#41"><abbr title="App\Models\User::casts">casts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Api/ApiExpenseRepository.php.html#10"><abbr title="App\Repositories\Api\ApiExpenseRepository::getExpenses">getExpenses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Api/ApiGoalRepository.php.html#10"><abbr title="App\Repositories\Api\ApiGoalRepository::getGoals">getGoals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Api/ApiGoalRepository.php.html#15"><abbr title="App\Repositories\Api\ApiGoalRepository::getAchievementHistory">getAchievementHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Fake/FakeExpenseRepository.php.html#19"><abbr title="App\Repositories\Fake\FakeExpenseRepository::getExpenses">getExpenses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Fake/FakeGoalRepository.php.html#16"><abbr title="App\Repositories\Fake\FakeGoalRepository::getGoals">getGoals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/Fake/FakeGoalRepository.php.html#30"><abbr title="App\Repositories\Fake\FakeGoalRepository::getAchievementHistory">getAchievementHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ExpenseService.php.html#14"><abbr title="App\Services\ExpenseService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ExpenseService.php.html#27"><abbr title="App\Services\ExpenseService::processExpenses">processExpenses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/FinancialForecastService.php.html#22"><abbr title="App\Services\FinancialForecastService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/FinancialForecastService.php.html#33"><abbr title="App\Services\FinancialForecastService::generateForecast">generateForecast</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#12"><abbr title="App\Services\GoalService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#23"><abbr title="App\Services\GoalService::processGoals">processGoals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#50"><abbr title="App\Services\GoalService::getAchievementHistory">getAchievementHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#19"><abbr title="App\Services\OpenAIService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#25"><abbr title="App\Services\OpenAIService::getCacheKey">getCacheKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#31"><abbr title="App\Services\OpenAIService::makeOpenAIRequest">makeOpenAIRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#89"><abbr title="App\Services\OpenAIService::getExpenseSummary">getExpenseSummary</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#123"><abbr title="App\Services\OpenAIService::formatExpenseInput">formatExpenseInput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#145"><abbr title="App\Services\OpenAIService::generateProspectiveAnalysis">generateProspectiveAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#169"><abbr title="App\Services\OpenAIService::generateFinancialAnalysis">generateFinancialAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#193"><abbr title="App\Services\OpenAIService::generateAchievementAnalysis">generateAchievementAnalysis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#212"><abbr title="App\Services\OpenAIService::formatAchievementInput">formatAchievementInput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/RouteServiceProvider.php.html#50"><abbr title="App\Providers\RouteServiceProvider::configureRateLimiting">configureRateLimiting</abbr></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#216"><abbr title="App\Http\Controllers\AIAnalysisController::generateGoalsAchievementAnalysis">generateGoalsAchievementAnalysis</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#31"><abbr title="App\Services\OpenAIService::makeOpenAIRequest">makeOpenAIRequest</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/FinancialForecastController.php.html#95"><abbr title="App\Http\Controllers\FinancialForecastController::getFinancialForecast">getFinancialForecast</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/ExpenseService.php.html#27"><abbr title="App\Services\ExpenseService::processExpenses">processExpenses</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#23"><abbr title="App\Services\GoalService::processGoals">processGoals</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/GoalService.php.html#50"><abbr title="App\Services\GoalService::getAchievementHistory">getAchievementHistory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#123"><abbr title="App\Services\OpenAIService::formatExpenseInput">formatExpenseInput</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#169"><abbr title="App\Services\OpenAIService::generateFinancialAnalysis">generateFinancialAnalysis</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#80"><abbr title="App\Http\Controllers\AIAnalysisController::generateAnalysis">generateAnalysis</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/AIAnalysisController.php.html#145"><abbr title="App\Http\Controllers\AIAnalysisController::generateGoalsAnalysis">generateGoalsAnalysis</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Api/ApiExpenseRepository.php.html#10"><abbr title="App\Repositories\Api\ApiExpenseRepository::getExpenses">getExpenses</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/Api/ApiGoalRepository.php.html#15"><abbr title="App\Repositories\Api\ApiGoalRepository::getAchievementHistory">getAchievementHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#89"><abbr title="App\Services\OpenAIService::getExpenseSummary">getExpenseSummary</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#145"><abbr title="App\Services\OpenAIService::generateProspectiveAnalysis">generateProspectiveAnalysis</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#193"><abbr title="App\Services\OpenAIService::generateAchievementAnalysis">generateAchievementAnalysis</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/OpenAIService.php.html#212"><abbr title="App\Services\OpenAIService::formatAchievementInput">formatAchievementInput</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Providers/RouteServiceProvider.php.html#50"><abbr title="App\Providers\RouteServiceProvider::configureRateLimiting">configureRateLimiting</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.8</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.12</a> and <a href="https://phpunit.de/">PHPUnit 11.5.6</a> at Fri Feb 7 16:42:30 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=11.0.8" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=11.0.8" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=11.0.8" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,0,0,0,0,0,0,1,9], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([31,0,0,0,0,0,0,1,0,0,0,10], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,9,"<a href=\"Http\/Controllers\/AIAnalysisController.php.html#13\">App\\Http\\Controllers\\AIAnalysisController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#5\">App\\Http\\Controllers\\Controller<\/a>"],[0,2,"<a href=\"Http\/Controllers\/FinancialDataController.php.html#11\">App\\Http\\Controllers\\FinancialDataController<\/a>"],[0,4,"<a href=\"Http\/Controllers\/FinancialForecastController.php.html#29\">App\\Http\\Controllers\\FinancialForecastController<\/a>"],[100,3,"<a href=\"Models\/AIModel.php.html#5\">App\\Models\\AIModel<\/a>"],[100,0,"<a href=\"Models\/Expense.php.html#8\">App\\Models\\Expense<\/a>"],[100,0,"<a href=\"Models\/Goal.php.html#7\">App\\Models\\Goal<\/a>"],[0,1,"<a href=\"Models\/User.php.html#10\">App\\Models\\User<\/a>"],[100,3,"<a href=\"Providers\/AppServiceProvider.php.html#13\">App\\Providers\\AppServiceProvider<\/a>"],[92.3076923076923,3,"<a href=\"Providers\/RouteServiceProvider.php.html#11\">App\\Providers\\RouteServiceProvider<\/a>"],[0,2,"<a href=\"Repositories\/Api\/ApiExpenseRepository.php.html#8\">App\\Repositories\\Api\\ApiExpenseRepository<\/a>"],[0,3,"<a href=\"Repositories\/Api\/ApiGoalRepository.php.html#8\">App\\Repositories\\Api\\ApiGoalRepository<\/a>"],[0,1,"<a href=\"Repositories\/Fake\/FakeExpenseRepository.php.html#9\">App\\Repositories\\Fake\\FakeExpenseRepository<\/a>"],[0,2,"<a href=\"Repositories\/Fake\/FakeGoalRepository.php.html#8\">App\\Repositories\\Fake\\FakeGoalRepository<\/a>"],[100,1,"<a href=\"Services\/CurrencyFormatter.php.html#5\">App\\Services\\CurrencyFormatter<\/a>"],[0,4,"<a href=\"Services\/ExpenseService.php.html#9\">App\\Services\\ExpenseService<\/a>"],[100,1,"<a href=\"Services\/FinancialCalculator.php.html#5\">App\\Services\\FinancialCalculator<\/a>"],[0,2,"<a href=\"Services\/FinancialForecastService.php.html#9\">App\\Services\\FinancialForecastService<\/a>"],[100,1,"<a href=\"Services\/FinancialValidator.php.html#5\">App\\Services\\FinancialValidator<\/a>"],[0,7,"<a href=\"Services\/GoalService.php.html#8\">App\\Services\\GoalService<\/a>"],[0,20,"<a href=\"Services\/OpenAIService.php.html#10\">App\\Services\\OpenAIService<\/a>"],[100,4,"<a href=\"Services\/RiskAnalyzer.php.html#5\">App\\Services\\RiskAnalyzer<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Http\/Controllers\/AIAnalysisController.php.html#18\">App\\Http\\Controllers\\AIAnalysisController::__construct<\/a>"],[0,2,"<a href=\"Http\/Controllers\/AIAnalysisController.php.html#80\">App\\Http\\Controllers\\AIAnalysisController::generateAnalysis<\/a>"],[0,2,"<a href=\"Http\/Controllers\/AIAnalysisController.php.html#145\">App\\Http\\Controllers\\AIAnalysisController::generateGoalsAnalysis<\/a>"],[0,4,"<a href=\"Http\/Controllers\/AIAnalysisController.php.html#216\">App\\Http\\Controllers\\AIAnalysisController::generateGoalsAchievementAnalysis<\/a>"],[0,1,"<a href=\"Http\/Controllers\/FinancialDataController.php.html#22\">App\\Http\\Controllers\\FinancialDataController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/FinancialDataController.php.html#82\">App\\Http\\Controllers\\FinancialDataController::getData<\/a>"],[0,1,"<a href=\"Http\/Controllers\/FinancialForecastController.php.html#37\">App\\Http\\Controllers\\FinancialForecastController::__construct<\/a>"],[0,3,"<a href=\"Http\/Controllers\/FinancialForecastController.php.html#95\">App\\Http\\Controllers\\FinancialForecastController::getFinancialForecast<\/a>"],[100,2,"<a href=\"Models\/AIModel.php.html#7\">App\\Models\\AIModel::validateInput<\/a>"],[100,1,"<a href=\"Models\/AIModel.php.html#12\">App\\Models\\AIModel::normalize<\/a>"],[0,1,"<a href=\"Models\/User.php.html#41\">App\\Models\\User::casts<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#18\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#34\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#27\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[66.66666666666666,2,"<a href=\"Providers\/RouteServiceProvider.php.html#50\">App\\Providers\\RouteServiceProvider::configureRateLimiting<\/a>"],[0,2,"<a href=\"Repositories\/Api\/ApiExpenseRepository.php.html#10\">App\\Repositories\\Api\\ApiExpenseRepository::getExpenses<\/a>"],[0,1,"<a href=\"Repositories\/Api\/ApiGoalRepository.php.html#10\">App\\Repositories\\Api\\ApiGoalRepository::getGoals<\/a>"],[0,2,"<a href=\"Repositories\/Api\/ApiGoalRepository.php.html#15\">App\\Repositories\\Api\\ApiGoalRepository::getAchievementHistory<\/a>"],[0,1,"<a href=\"Repositories\/Fake\/FakeExpenseRepository.php.html#19\">App\\Repositories\\Fake\\FakeExpenseRepository::getExpenses<\/a>"],[0,1,"<a href=\"Repositories\/Fake\/FakeGoalRepository.php.html#16\">App\\Repositories\\Fake\\FakeGoalRepository::getGoals<\/a>"],[0,1,"<a href=\"Repositories\/Fake\/FakeGoalRepository.php.html#30\">App\\Repositories\\Fake\\FakeGoalRepository::getAchievementHistory<\/a>"],[100,1,"<a href=\"Services\/CurrencyFormatter.php.html#7\">App\\Services\\CurrencyFormatter::format<\/a>"],[0,1,"<a href=\"Services\/ExpenseService.php.html#14\">App\\Services\\ExpenseService::__construct<\/a>"],[0,3,"<a href=\"Services\/ExpenseService.php.html#27\">App\\Services\\ExpenseService::processExpenses<\/a>"],[100,1,"<a href=\"Services\/FinancialCalculator.php.html#7\">App\\Services\\FinancialCalculator::calculateInterest<\/a>"],[0,1,"<a href=\"Services\/FinancialForecastService.php.html#22\">App\\Services\\FinancialForecastService::__construct<\/a>"],[0,1,"<a href=\"Services\/FinancialForecastService.php.html#33\">App\\Services\\FinancialForecastService::generateForecast<\/a>"],[100,1,"<a href=\"Services\/FinancialValidator.php.html#7\">App\\Services\\FinancialValidator::isValidAmount<\/a>"],[0,1,"<a href=\"Services\/GoalService.php.html#12\">App\\Services\\GoalService::__construct<\/a>"],[0,3,"<a href=\"Services\/GoalService.php.html#23\">App\\Services\\GoalService::processGoals<\/a>"],[0,3,"<a href=\"Services\/GoalService.php.html#50\">App\\Services\\GoalService::getAchievementHistory<\/a>"],[0,1,"<a href=\"Services\/OpenAIService.php.html#19\">App\\Services\\OpenAIService::__construct<\/a>"],[0,1,"<a href=\"Services\/OpenAIService.php.html#25\">App\\Services\\OpenAIService::getCacheKey<\/a>"],[0,4,"<a href=\"Services\/OpenAIService.php.html#31\">App\\Services\\OpenAIService::makeOpenAIRequest<\/a>"],[0,2,"<a href=\"Services\/OpenAIService.php.html#89\">App\\Services\\OpenAIService::getExpenseSummary<\/a>"],[0,3,"<a href=\"Services\/OpenAIService.php.html#123\">App\\Services\\OpenAIService::formatExpenseInput<\/a>"],[0,2,"<a href=\"Services\/OpenAIService.php.html#145\">App\\Services\\OpenAIService::generateProspectiveAnalysis<\/a>"],[0,3,"<a href=\"Services\/OpenAIService.php.html#169\">App\\Services\\OpenAIService::generateFinancialAnalysis<\/a>"],[0,2,"<a href=\"Services\/OpenAIService.php.html#193\">App\\Services\\OpenAIService::generateAchievementAnalysis<\/a>"],[0,2,"<a href=\"Services\/OpenAIService.php.html#212\">App\\Services\\OpenAIService::formatAchievementInput<\/a>"],[100,1,"<a href=\"Services\/RiskAnalyzer.php.html#7\">App\\Services\\RiskAnalyzer::calculateRiskScore<\/a>"],[100,3,"<a href=\"Services\/RiskAnalyzer.php.html#13\">App\\Services\\RiskAnalyzer::classifyRisk<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
